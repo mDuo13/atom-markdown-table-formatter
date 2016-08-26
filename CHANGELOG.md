@@ -1,3 +1,10 @@
+# 2.9.2
+* Changed settings image URL again (should work this time)
+* Fixed it to read settings for the correct package name (previously was reading settings from the original fork's package name)
+
+## 2.9.1
+* Changed settings image URL in readme
+
 ## 2.9.0
 * Added limitLastColumnPadding setting to generate less padding for tables where the last column runs long
 

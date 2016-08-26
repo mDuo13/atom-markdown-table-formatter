@@ -19,7 +19,7 @@ class TableFormatter
         @format editor, true if @formatOnSave
 
   readConfig: (key, callback) ->
-    key = 'markdown-table-formatter.' + key
+    key = 'markdown-table-formatter-z.' + key
     @subscriptions.add atom.config.onDidChange key, callback
     callback
       newValue: atom.config.get(key)
@@ -37,7 +37,7 @@ class TableFormatter
     @readConfig "defaultTableJustification", ({newValue}) =>
       @defaultTableJustification = newValue
     @readConfig "markdownGrammarScopes", ({newValue}) =>
-      @markdownGrammarScopes = newValue
+      @markdownGrammarScopes = newValue or []
     @readConfig "limitLastColumnPadding", ({newValue}) =>
       @limitLastColumnPadding = newValue
 
@@ -46,6 +46,8 @@ class TableFormatter
 
   format: (editor, force) ->
     if not (editor.getGrammar().scopeName in @markdownGrammarScopes)
+      if not @markdownGrammarScopes
+        console.log("Warning: no markdown grammar scopes defined, not table-formatting")
       return
 
     @pll = atom.config.get('editor.preferredLineLength')
