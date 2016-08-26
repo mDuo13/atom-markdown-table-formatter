@@ -1,7 +1,7 @@
 {
   "name": "markdown-table-formatter-z",
   "main": "./lib/markdown-table-formatter",
-  "version": "2.8.4",
+  "version": "2.9.0",
   "description": "A markdown plugin to format tables, improved.",
   "repository": "https://github.com/mduo13/atom-markdown-table-formatter",
   "license": "MIT",

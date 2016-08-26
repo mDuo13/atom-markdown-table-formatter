@@ -1,4 +1,4 @@
-## 2.8.4
+## 2.9.0
 * Added limitLastColumnPadding setting to generate less padding for tables where the last column runs long
 
 ## 2.8.3
