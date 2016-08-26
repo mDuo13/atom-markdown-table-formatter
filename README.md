@@ -1,8 +1,8 @@
-# Markdown Table Formatter
+# Markdown Table Formatter Z
 
-A simple markdown plugin to format tables.
+A markdown plugin to format tables.
 
-Based on the awesome [Improved Markdown table commands for TextMate](http://www.leancrew.com/all-this/2012/03/improved-markdown-table-commands-for-textmate/) work from [Dr. Drang (@drdrang)](https://twitter.com/drdrang)
+Forked from [fcrespo82's version](https://github.com/fcrespo82/atom-markdown-table-formatter) to add a new feature. Based on the awesome [Improved Markdown table commands for TextMate](http://www.leancrew.com/all-this/2012/03/improved-markdown-table-commands-for-textmate/) work from [Dr. Drang (@drdrang)](https://twitter.com/drdrang)
 
 [Changelog](https://github.com/fcrespo82/atom-markdown-table-formatter/blob/master/CHANGELOG.md)
 
@@ -16,7 +16,11 @@ There are two basic ways of using this plugin.
 
 ### Settings & Keybindings
 
-![Settings image](https://github.com/fcrespo82/atom-markdown-table-formatter/raw/master/settings.png)
+![Settings image](settings.png)
+
+* Limit Last Column Padding (**New**)
+
+    In tables where the last column has extra long cells, avoid padding the short cells or table headers beyond the editor's preferredLineLength?
 
 ## Tips
 
