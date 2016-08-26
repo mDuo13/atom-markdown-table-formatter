@@ -16,7 +16,7 @@ There are two basic ways of using this plugin.
 
 ### Settings & Keybindings
 
-![Settings image](settings.png)
+![Settings image](https://github.com/mduo13/atom-markdown-table-formatter/settings.png)
 
 * Limit Last Column Padding (**New**)
 
